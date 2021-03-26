@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Clover Revolutions</title>
+    <link rel="shortcut icon" href="assets/ico/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="start-container menu-background">
+      <div class="images-logo-of-game">
+        <img src="assets/img/black_clover_white_shadow.png " alt=" " /><br />
+        <img height="80 " src="assets/img/revolution_white.png " alt=" " />
+      </div>
+      <div class="start-page">
+        <div>Enter your name</div>
+        <input type="text" />
+        <button class="disabled" disabled>Save</button>
+      </div>
+
+      <div class="btn display-none">
+        <button class="start">Start Game</button><br />
+        <button class="top-scores">Top Scores</button><br />
+        <button class="rules">Rules</button><br />
+        <button class="exit">Exit</button>
+      </div>
+    </div>
+    <div class="container-move-arrow display-none"></div>
+    <div class="game-container game-background display-none">
+      <div class="header-bar display-none">
+        <progress>Progress</progress>
+        <span class="scores">Scores: 0</span>
+      </div>
+      <div class="scores-board display-none"></div>
+      <div class="container-static-arrow display-none">
+        <img
+          class="arrow-static-style arrow-left"
+          src="assets/img/arrows/static/staticLeft.png "
+        />
+        <img
+          class="arrow-static-style arrow-bottom"
+          src="assets/img/arrows/static/staticDown.png "
+        />
+        <img
+          class="arrow-static-style arrow-up"
+          src="assets/img/arrows/static/staticUp.png "
+        />
+        <img
+          class="arrow-static-style arrow-right"
+          src="assets/img/arrows/static/staticRight.png "
+        />
+      </div>
+      <!-- <div class='modal-overlay display-none'></div>
+        <div class='modal display-none'>
+            <header class='modal__header'>
+                <h2></h2>
+            </header>
+            <main class='modal__content'>
+                <span class='modal-content-span'></span>
+            </main>
+
+            <footer class='modal__footer'>
+                <button class='modal__changeName'>CHANGE NAME</button>
+                <button class='modal__playAgain'>PlAY AGAIN</button>
+                <button class='modal__backToMenu'>BACK TO MENU</button>
+            </footer>
+        </div> -->
+    </div>
+    <div class="modal-overlay display-none"></div>
+    <div class="modal display-none">
+      <header class="modal__header">
+        <h2></h2>
+      </header>
+      <main class="modal__content">
+        <span class="modal-content-span"></span>
+        <img class="display-none" />
+      </main>
+
+      <footer class="modal__footer display-none">
+        <div class="modal__footer__scores display-none">
+          <button class="modal__changeName">CHANGE NAME</button>
+          <button class="modal__playAgain">PlAY AGAIN</button>
+          <button class="modal__backToMenu">BACK TO MENU</button>
+        </div>
+        <div class="modal__footer__rules display-none">
+          <button class="modal__rules__Ok">OK</button>
+        </div>
+      </footer>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDe9h33mlydRogVqSsX9ghUyyGm7uFNi3c",
+        authDomain: "myproject-5d533.firebaseapp.com",
+        projectId: "myproject-5d533",
+        storageBucket: "myproject-5d533.appspot.com",
+        messagingSenderId: "361893633705",
+        appId: "1:361893633705:web:94a286194737bd70fe53b8",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="module" src="./js/init.js"></script>
+  <script type="text/javascript" src="ddr.js"></script></body>
+</html>
